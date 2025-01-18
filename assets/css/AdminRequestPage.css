@@ -1,0 +1,183 @@
+.search-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 80%; */
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.search-box {
+    flex-grow: 1;
+    /* margin-right: 10px; */
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    border: 1px solid #6d4c41;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 10px;
+    flex-grow: 1;
+    max-width: 60%;
+}
+
+.search-box button {
+    background-color: #6d4c41;
+    color: white;
+    border: 1px solid #6d4c41;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #5a3b34;
+}
+
+.dropdown-filter select {
+    border: 1px solid #6d4c41;
+    border-radius: 8px;
+    padding: 10px 10px;
+    background-color: white;
+    color: #6d4c41;
+    padding-right: 350px;
+    /* max-width: 30%; */
+}
+
+@media(max-width: 880px) {
+    .dropdown-filter select {
+        padding-right: 200px;
+    }
+}
+
+@media(max-width:775px) {
+    .search-filter-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        /* margin: auto;
+        padding: auto; */
+        /* align-items: center; */
+    }
+
+    .dropdown-filter select {
+        padding-right: 225px;
+    }
+}
+
+.table-container {
+    /* border: 2px solid #8B4513; */
+    padding: 10px;
+}
+
+.table {
+    border: 1px solid rgba(110, 69, 33, 1);
+    border-radius: 5px;
+}
+
+.search-bar {
+    margin-bottom: 15px;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.custom-pagination .btn {
+    color: #8B4513;
+    background-color: white;
+    border: 1px solid rgba(110, 69, 33, 1);
+    margin-right: -6px;
+    border-radius: 0;
+    padding: 7px 15px;
+}
+
+.prev-btn {
+    margin-right: 0px;
+    border-radius: 10px 0px 0px 10px !important;
+    background-color: #8B4513 !important;
+    color: #fff !important;
+}
+
+.next-btn {
+    margin-left: 5px;
+    border-radius: 0px 10px 10px 0px !important;
+    background-color: #8B4513 !important;
+    color: #fff !important;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.custom-pagination .btn:hover {
+    background-color: #5A2F1F;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: none !important;
+    border-width: 0;
+}
+
+th {
+    background-color: rgba(110, 69, 33, 1) !important;
+    color: #fff !important;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: Center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+tr {
+    padding: 5px !important;
+}
+
+tbody {
+    font-family: Merriweather;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+td {
+    padding: 20px !important;
+}
+
+.table>:not(caption)>*>* {
+    border: 1px solid rgba(110, 69, 33, 1);
+    padding: .5rem .5rem;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 30px;
+}

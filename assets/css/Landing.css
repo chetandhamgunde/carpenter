@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar-brand {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 24px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 85px;
+}
+
+/* Full-screen carousel with content on the left */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    max-width: 500px;
+    color: white;
+    z-index: 2;
+}
+
+.content-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.content-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-get-started {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #6E4521;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Overlay for better text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* General Styles for the Experience Section */
+.experience-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.experience-title {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.tick-icon {
+    font-size: 18px;
+    color: #28a745;
+}
+
+/* cards font */
+.card-text {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.card-text:contains("Flooring & Wood paneling") {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .experience-section {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .experience-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .experience-description {
+        font-size: 16px;
+    }
+
+    .experience-section .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .experience-section img {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .experience-section .col-md-6,
+    .experience-section .col-md-5 {
+        width: 100%;
+    }
+
+    .experience-section .features {
+        flex-direction: column;
+    }
+
+    .experience-section .col-6 {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .feature-item p {
+        text-align: center;
+    }
+}
+
+/* Project Cards */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    height: 400px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.btn-view-project {
+    color: #fff;
+    background: linear-gradient(135deg, #6E4521, #8B5A2B);
+    /* Gradient from dark to lighter brown */
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    /* Rounded edges */
+    box-shadow: 0px 4px 12px rgba(110, 69, 33, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-view-project:hover {
+    background: linear-gradient(135deg, #8B5A2B, #A36737);
+    /* Slightly lighter gradient on hover */
+    box-shadow: 0px 6px 15px rgba(110, 69, 33, 0.5);
+    transform: translateY(-3px);
+    /* Slight lift on hover */
+}
+
+/* Client Testimonial Section */
+.client-testimonial {
+    margin-bottom: 20px;
+    /* Adjust this value as needed */
+    padding-bottom: 0;
+    /* Ensure there's no extra padding at the bottom */
+}
+
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    overflow: visible;
+}
+
+/* Testimonial Image (Floating) */
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Testimonial Header */
+.testimonial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.testimonial-info {
+    background-color: #6E4521;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial-name {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
+
+.testimonial-rating span {
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    margin-top: 20px;
+    text-align: center;
+    color: #333333;
+    font-size: 1em;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-name {
+        font-size: 1em;
+    }
+
+    .testimonial-rating span {
+        font-size: 1em;
+    }
+
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+    }
+
+    .testimonial-content {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,436 @@
+.side-space {
+    padding: 50px 200px;
+}
+
+.form-container {
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: #d5c2b2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(110, 69, 33, 1);
+}
+
+.nav-links {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.lock-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.lock-icon i {
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.btn-submit {
+    background-color: #8b4513;
+    color: #fff;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.image-section .img1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.image-section .img1 .img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links {
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(110, 69, 33, 1);
+}
+
+.form-control-lg,
+.form-select-lg {
+    width: 100%;
+    border: 1px solid rgba(110, 69, 33, 1);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=text]::value,
+input[type=text]::value,
+textarea {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.select-options {
+    width: 100%;
+    background-color: rgba(217, 217, 217, 1);
+    border: 1px solid rgba(110, 69, 33, 1);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.form-label {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.btn-submit {
+    background-color: rgba(110, 69, 33, 1);
+    color: white;
+    border: none;
+    padding: 13px 55px;
+    border-radius: 10px;
+    width: max-content;
+    margin: auto;
+}
+
+.custom-file-label {
+    background-color: rgba(110, 69, 33, 1);
+    color: white;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    border: 1px solid #8B4513;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.value-text {
+    border: 1px solid #8B4513;
+    border-radius: 0 5px 5px 0;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    color: #6c757d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.input-group {
+    position: relative;
+    background-color: #fff !important;
+    height: 54px;
+}
+
+
+@media(max-width:1000px) {
+    .side-space {
+        padding: 50px 100px;
+    }
+}
+
+@media(max-width:657px) {
+    .side-space {
+        padding: 50px 0px;
+    }
+}
+
+@media(max-width:450px) {
+    .nav-links a {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+}
+
+input:readonly,
+select:readonly {
+    background-color: white;
+    color: black;
+    opacity: 1;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+}
+
+.work-sample-form {
+    font-family: Merriweather Sans;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 54px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* Style for the upload container when visible */
+#upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adjust the file name display style */
+#file-value {
+    border: 1px solid rgba(110, 69, 33, 1);
+    border-radius: 5px;
+    padding: 10px;
+    color: #6c757d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+/* Style the Choose File button */
+.custom-file-label {
+    background-color: rgba(110, 69, 33, 1);
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.custom-file-label:hover {
+    background-color: rgba(90, 50, 20, 1);
+}
+
+/* Improve alignment for the entire input group */
+.input-group {
+    margin-top: 10px;
+}
+
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    /* Remove default outline */
+}
+
+.dropdown-toggle::after {
+    content: '';
+    /* Hide the default arrow */
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.edit-image-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.img-container:hover .dropdown {
+    display: flex;
+}
+
+.img-container:hover .dropdown-menu {
+    display: block;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    border: 2px solid #ddd;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.edit-image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    /* Remove default outline */
+}
+
+.dropdown-toggle::after {
+    content: '';
+    /* Hide the default arrow */
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.edit-image-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(110, 69, 33, 1);
+    /* Customize underline color */
+    transition: width 0.3s ease;
+}
+
+.nav-links a.active::after {
+    width: 75%;
+    margin-left: 12%;
+    /* Expand underline */
+}
